@@ -1,0 +1,103 @@
+/* Popup Background Freeze */
+body.freeze {
+    overflow: hidden;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px !important; /* Increased width for two-column layout */
+    position: relative;
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100% !important;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Two-column layout for form */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+
+.button-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    align-items: center;
+}
+
+.button-group .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+.styled-input {
+    width: 100% !important;
+padding: 10px !important;
+    margin: 5px 0 !important;
+box-sizing: border-box !important;
+    border: 1px solid #ccc;
+    border-radius: 4px !important;
+  }
+  .styled-input::-webkit-outer-spin-button,
+  .styled-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  

@@ -1,0 +1,112 @@
+/* Popup Background Freeze */
+body.freeze {
+    overflow: hidden;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px; /* Adjusted width for the two-column layout */
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100%; /* Ensure inputs fill the form group width */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Two-column layout for forms */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+}
+
+/* Button Groups */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.button-group button.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-group button.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Visibility Handling */
+.hidden {
+    display: none;
+}
+
+/* Form-Specific Styles */
+#depositPopup .form-group,
+#withdrawalPopup .form-group,
+#accountingPopup .form-group {
+    margin-bottom: 15px;
+}
+
+#depositPopup select,
+#withdrawalPopup select,
+#accountingPopup select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#depositPopup input,
+#withdrawalPopup input,
+#accountingPopup input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}

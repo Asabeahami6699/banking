@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin:0px;
+    background-color: skyblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    width: 45%; /* Adjust width as needed */
+    margin: 15px;;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #aeaeae;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    font-size: 14px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.difference-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    width: 45%; /* Adjust width as needed */
+}
+
+.difference-box label {
+    font-weight: bold;
+}
+
+.difference-box #difference {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d9534f; /* Red color for the difference */
+}
+
